@@ -6,9 +6,19 @@ This is intended to be a multi-purpose API that can be used for multiple functio
 
 This API is secured using JSON Web Tokens (JWT). Upon authenticating with the login endpoint, the client will receive a JWT and can authenticate in subsequent requests by passing this token in the header as `x-access-token`. 
 
+## Functionality
+
+### GroupMe Bot
+
+The current functionality of the GroupMe Bot allows the user to type in `Food Gamble` and presents them back with a random suggestion for food. Also, users can also type `food search <restaurant query>` which will call the Google Places API and retrieve a restaurant matching the query. For example `Food Search Waffle House in Atlanta Georgia`.
+
+### API Routes
+
+Currently, the API is set up just for granting a JWT for a client. There is one route that returns sample data for testing the functionality/success of the JWT auth. More to come for this.
+
 ## TODOs: 
 
   - Authenticate users from DB (Google Cloud SQL).
   - Break out api file into multiple files to gain ability for better local testing and configurations.
   - Secure passwords in code by utilizing secure password store such as Hashicorp Vault.
-  - Allow Bot users to specify current location and use Google Places API to present closest restaurants.
+  - Restaurant Roulette allowing a random restaurant to be returned to user based on random latititude and longitude within a certain radius of the user's current location.
