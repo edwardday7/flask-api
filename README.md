@@ -10,7 +10,7 @@ This API is secured using JSON Web Tokens (JWT). Upon authenticating with the lo
 
 ### GroupMe Bot
 
-The current functionality of the GroupMe Bot allows the user to type in `Food Gamble` and presents them back with a random suggestion for food. Also, users can also type `food search <restaurant query>` which will call the Google Places API and retrieve a restaurant matching the query. For example `Food Search Waffle House in Atlanta Georgia`.
+The current functionality of the GroupMe Bot allows the user to type in `Food Gamble` and presents them back with a random suggestion for food. Also, users can also type `food search <restaurant query>` which will call the Google Places API and retrieve a restaurant matching the query. For example `Food Search Wings in Atlanta Georgia` returns the name of a Wing restaurant in Atlanta with the corresponding address.
 
 ### API Routes
 
