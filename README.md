@@ -19,6 +19,6 @@ Currently, the API is set up just for granting a JWT for a client. There is one 
 ## TODOs: 
 
   - Authenticate users from DB (Google Cloud SQL).
-  - Break out api file into multiple files to gain ability for better local testing and configurations.
+  - Set up configurations for easier local testing.
   - Secure passwords in code by utilizing secure password store such as Hashicorp Vault.
   - Restaurant Roulette allowing a random restaurant to be returned to user based on random latititude and longitude within a certain radius of the user's current location.
