@@ -8,8 +8,8 @@ from flask import request, jsonify
 from app import app
 
 
-bot_id = "BOT ID HERE"
-gmaps = googlemaps.Client(key='API KEY HERE')
+bot_id = os.environ.get("BOT_ID")
+gmaps = googlemaps.Client(key=os.environ.get("GOOGLE_MAPS_KEY"))
 
 ################################################################################
 #                                 FOOD BOT                                     # 
