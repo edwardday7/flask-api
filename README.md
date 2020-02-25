@@ -13,9 +13,9 @@ The current functionality of the GroupMe Bot allows the user to type in `Food Ga
 Currently, the long term plan is to build a separate frontend that allows a user to add, delete, and view recipes. I have a recipe book that my mother made for me with all sorts of recipes, but I have a tough time keeping up with it, and would also like access to its recipes anywhere I go. Even though there are websites out there that offer this sort of functionality, I wanted to build my own version as a learning experience. These endpoints are built with this end goal in mind.
 
 ```
-https://api.edwarddayvii.com/login [POST]- Returns a JWT with a 30 minute expiration. Must authenticate using basic auth. 
-https://api.edwarddayvii.com/ingredients [GET] - Returns JSON of all ingredients in database.
-https://api.edwarddayvii.com/recipes [GET] - Returns JSON of all recipes for the specific user in the database.
+https://api.edwarddayvii.com/login [POST] - Returns a JWT with a 30 minute expiration. Must authenticate using basic auth. 
+https://api.edwarddayvii.com/ingredients [GET] - Returns JSON with all ingredients in database.
+https://api.edwarddayvii.com/recipes [GET] - Returns JSON with all recipes for the specific user in the database.
 https://api.edwarddayvii.com/recipetest [GET] - Returns test JSON. Doesn't call database.
 https://api.edwarddayvii.com/food/health [GET] - Check the status of the food bot.
 ```
