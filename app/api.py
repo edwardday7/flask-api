@@ -56,7 +56,7 @@ def recipe_test(user):
     return jsonify({'name' : 'Sausage Dip', 'description' : 'Instructions'}), 200
 
 
-@app.route('/login', methods=['GET'])
+@app.route('/login', methods=['POST'])
 def login():
     # 'auth' contains both username and password passed in header.
     auth = request.authorization
